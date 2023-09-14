@@ -4,7 +4,6 @@ import './index.css'
 
 const actionMovie = 'ACTION'
 const comedyMovie = 'COMEDY'
-const horrorMovie = 'HORROR'
 
 const PrimeVideo = props => {
   const {moviesList} = props
@@ -14,9 +13,6 @@ const PrimeVideo = props => {
   )
   const comedyMoviesList = moviesList.filter(
     each => each.categoryId === comedyMovie,
-  )
-  const horrorMoviesList = moviesList.filter(
-    each => each.categoryId === horrorMovie,
   )
 
   return (
@@ -31,8 +27,6 @@ const PrimeVideo = props => {
         <MoviesSlider moviesList={actionMoviesList} />
         <h1 className="heading">Comedy Movies</h1>
         <MoviesSlider moviesList={comedyMoviesList} />
-        <h1 className="heading">Horror Movies</h1>
-        <MoviesSlider moviesList={horrorMoviesList} />
       </div>
     </div>
   )
