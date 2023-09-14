@@ -16,7 +16,7 @@ const MovieItem = props => {
         trigger={
           <img src={thumbnailUrl} alt="thumbnail" className="thumbnail" />
         }
-        className="tpopup-content"
+        className="popup-content"
       >
         {close => (
           <div className="modal-container">
