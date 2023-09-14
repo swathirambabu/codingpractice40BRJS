@@ -25,7 +25,7 @@ const MovieItem = props => {
               className="close-button"
               onClick={() => close()}
             >
-              <IoMdClose color="#231f30" />
+              <IoMdClose size={20} color="#231f20" />
             </button>
 
             <div className="movie-player-container">

@@ -12,16 +12,15 @@ const MoviesSlider = props => {
     slidesToShow: 1,
     slidesToScroll: 4,
   }
-  const {MoviesList} = props
+  const {moviesList} = props
   return (
-    <div className="slider-container">
+    <>
       <Slider {...settings}>
-        {MoviesList.map(each => (
+        {moviesList.map(each => (
           <MovieItem key={each.id} movieDetails={each} />
         ))}
       </Slider>
-    </div>
+    </>
   )
 }
-
 export default MoviesSlider
